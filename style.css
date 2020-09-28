@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2A4F6E;
+  color: #fff
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%; 
+}
+
+/* header */
+header {
+  background-color: #042037;
+}
+
+.header-nav {
+  background-color: #87ABC3;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 1rem;
+}
+
+.header-nav li{
+  display: inline;
+  margin: 0 8px;
+}
+
+.cover {
+  background: url(./img/Linth.png) no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  text-shadow: 1px 1px 2px black; 
+  height: 50vh;
+}
+
+.main-description {
+  padding: 1rem 0;
+}
+/* Main */
+.container {
+  width: 70%;
+  max-width: 1140px;
+  margin: 3rem auto;
+}
+
+/* Flex Content */
+.flex-container {
+  border-bottom: #042037 solid 3px;
+}
+
+.flex-content {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.flex-image{
+  width: 45%;
+}
+
+.flex-image img {
+  width: 100%;
+}
+
+.flex-text {
+  width: 55%;
+  margin: 0 3rem;
+}
+
+.flex-text-description {
+  padding: 1rem 0;
+}
+/* Grid Content */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.grid-image img {
+  width: 100%;
+}
+
+.grid-text {
+  text-align: center;
+}
+
+.grid-text-title {
+  padding: 1rem 0;
+}
+
+/* Footer */
+footer {
+  background-color: #000711;
+  text-align: center;
+  min-height: 5vh;
+}
+
+footer p {
+  padding: 1rem 0;
+}
+
+/* Utils */
+.text-md {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.text-lg {
+  font-size: 2.3rem;
+  font-weight: 500;
+}
+
+.text-xl {
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+
+
+@media(max-width: 894px) {
+  .flex-content {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .flex-image {
+    width: 100%;
+  }
+
+  .flex-text {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .grid-container {
+    display: block;
+  }
+}
+
+@media(max-width: 530px) {
+  .text-md {
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+
+  .text-lg {
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+
+  .text-xl {
+    font-size: 2.3rem;
+    font-weight: 500;
+  }
+  
+  .fixed {
+    position: relative;
+  }
+
+  .current {
+    display: none !important
+  }
+}
